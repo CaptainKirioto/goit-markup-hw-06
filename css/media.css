@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  .principles-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .principles-list-item {
+    width: calc((100% - 24px) / 2);
+    background-color: tomato;
+  }
+}
