@@ -1,4 +1,41 @@
 @media screen and (min-width: 768px) {
+  /* Banner */
+
+  .banner {
+    height: 436px;
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-background.jpg);
+    padding: 112px 0;
+  }
+
+  @media screen and (min-devise-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banner {
+      background-color: #2e2f42;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-bg-2x.jpg);
+    }
+  }
+
+  .banner-head {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    max-height: 120px;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
+  /* Principles */
+
   .container {
     width: 768px;
     padding: 0 16px;
@@ -6,13 +43,139 @@
   }
 
   .principles-list {
-    flex-direction: row;
-    flex-wrap: wrap;
     column-gap: 24px;
   }
 
   .principles-list-item {
     width: calc((100% - 24px) / 2);
-    background-color: tomato;
+  }
+
+  .principles-list-item-head {
+    text-align: left;
+  }
+
+  /* Team */
+
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+    padding: 0 92px;
+  }
+
+  /* Portfolio */
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* Banner */
+
+  .banner {
+    height: 600px;
+    width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background.jpg);
+    padding: 188px 0;
+  }
+
+  @media screen and (min-devise-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banner {
+      background-color: #2e2f42;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-2x.jpg);
+    }
+  }
+
+  .banner-head {
+    margin-bottom: 48px;
+  }
+
+  /* Principles */
+
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+  }
+
+  .principles {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .principles-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .principles-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .prnc-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+  }
+
+  .principles-list-icon {
+    display: block;
+  }
+
+  .principles-list-item-head {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .principles-list-item-text {
+    font-weight: 400;
+  }
+
+  /* Team */
+
+  .team {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  /* Portfolio */
+
+  .portfolio {
+    padding: 120px 0;
+  }
+
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
   }
 }
